@@ -184,3 +184,15 @@ span {
     background: linear-gradient(rgb(101, 5, 82), #FC00FF);
     border-radius: 100px;
 }
+
+
+#sidebar-container {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    height: 100%; 
+  }
+  #sidebar-container .flex {
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); 
+  }
