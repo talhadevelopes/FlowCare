@@ -2415,17 +2415,17 @@ video {
 }
 
 :root {
-  --header-color: #FC00FF;
+  --header-color: #fc00ff;
   /**********************YET TO BE DECIDED************************/
   --text-color: #000;
   --sub-heading-color: #000;
-  --button-color:#000;
+  --button-color: #000;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-image: url('../images/pinkish-white-bg.jpg');
+  background-image: url("../images/pinkish-white-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2467,7 +2467,7 @@ img {
 }
 
 .nav_links a::after {
-  content: '';
+  content: "";
   height: 2px;
   width: 100%;
   background: #b026b3;
@@ -2509,7 +2509,7 @@ img {
   right: 50%;
   bottom: 0;
   opacity: 0;
-  content: '';
+  content: "";
   background-color: rgb(101, 5, 82);
   z-index: -1;
 }
@@ -2561,8 +2561,8 @@ button:focus:before {
 }
 
 span {
-  color: #FC00FF;
-  text-shadow: 0 0 20px #FC00FF;
+  color: #fc00ff;
+  text-shadow: 0 0 20px #fc00ff;
   font-family: Dancing Script;
 }
 
@@ -2581,12 +2581,12 @@ span {
 
 ::-webkit-scrollbar {
   width: 10px;
-  background-color: transparent;
+  background-color: pink;
 }
 
 ::-webkit-scrollbar-thumb {
   display: block;
-  background: linear-gradient(rgb(101, 5, 82), #FC00FF);
+  background: linear-gradient(rgb(101, 5, 82), #fc00ff);
   border-radius: 100px;
 }
 
