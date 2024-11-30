@@ -1,3 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
 * {
     box-sizing: border-box;
 }
@@ -72,7 +78,7 @@ img {
     opacity: 1;
 }
 
-button {
+.header-button {
     font-size: 18px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -90,7 +96,7 @@ button {
     z-index: 1;
 }
 
-button:before {
+.header-button:before {
     transition: 0.5s all ease;
     position: absolute;
     top: 0;
@@ -103,8 +109,8 @@ button:before {
     z-index: -1;
 }
 
-button:hover,
-button:focus {
+.header-button:hover,
+.header-button:focus {
     color: white;
 }
 
@@ -116,7 +122,7 @@ button:focus:before {
     opacity: 1;
 }
 
-button:active {
+.header-button:active {
     transform: scale(0.9);
 }
 
