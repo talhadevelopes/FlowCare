@@ -1858,6 +1858,10 @@ video {
   border-top-width: 1px;
 }
 
+.border-r {
+  border-right-width: 1px;
+}
+
 .border-amber-500 {
   --tw-border-opacity: 1;
   border-color: rgb(245 158 11 / var(--tw-border-opacity, 1));
@@ -1919,6 +1923,11 @@ video {
 
 .border-transparent {
   border-color: transparent;
+}
+
+.border-red-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(252 165 165 / var(--tw-border-opacity, 1));
 }
 
 .bg-amber-100 {
