@@ -3,7 +3,8 @@ module.exports = {
   mode: 'jit', // Force Just-in-Time mode
   content: [
     "./*.{html,js}",
-    "./pages/**/*.{html,js}",
+    "./ecom/**/*.{html,js}",
+    "./blogs/**/*.{html,js}",
     "./scripts/**/*.{html,js}",
   ],
   theme: {
