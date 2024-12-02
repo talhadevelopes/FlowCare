@@ -1226,6 +1226,10 @@ video {
   margin-left: 5%;
 }
 
+.ml-\[0\%\] {
+  margin-left: 0%;
+}
+
 .line-clamp-3 {
   overflow: hidden;
   display: -webkit-box;
