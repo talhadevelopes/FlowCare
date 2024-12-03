@@ -29,17 +29,34 @@
             <div class="py-4">
               <!-- Main button -->
               <div class="group relative inline-block">
-                <div class="w-12 h-12 rounded-full bg-cover bg-center"
+                <div
+                  id="profilePicture"
+                  class="w-12 h-12 rounded-full bg-cover bg-center"
                   style="background-image: url('https://img.freepik.com/premium-photo/beautiful-woman-wearing-white-hijab-elegant-hijab_608068-34215.jpg');">
                 </div>
                 <!-- Tooltip container -->
                 <div
                   class="invisible opacity-0 ml-20 group-hover:visible group-hover:opacity-100 absolute left-1/2 top-full z-10 mt-2 -translate-x-1/2 transform rounded bg-gray-900 p-2 text-white transition-all duration-300">
-                  <!-- Individual tooltip links -->
+              
                   <div class="flex flex-col gap-2 whitespace-nowrap">
-                    <a href="#" class="block px-4 py-1 text-sm bg-pink-500 rounded hover:bg-pink-600">User 1</a>
-                    <a href="#" class="block px-4 py-1 text-sm bg-pink-500 rounded hover:bg-pink-600">User 2</a>
-                    <a href="#" class="block px-4 py-1 text-sm bg-pink-500 rounded hover:bg-pink-600">User 3</a>
+                    <a
+                      href="#"
+                      class="block px-4 py-1 text-sm bg-pink-500 rounded hover:bg-pink-600"
+                      onclick="changeImage('https://img.freepik.com/premium-photo/beautiful-woman-wearing-white-hijab-elegant-hijab_608068-34215.jpg');">
+                      User 1
+                    </a>
+                    <a
+                      href="#"
+                      class="block px-4 py-1 text-sm bg-pink-500 rounded hover:bg-pink-600"
+                      onclick="changeImage('https://media.istockphoto.com/photos/beautiful-young-muslim-woman-wearing-a-hijab-on-her-head-picture-id618035002?k=6&m=618035002&s=612x612&w=0&h=_1m2fRBf_DbVeFOZN-VwC2cW9QnV7tYerZwZo44lLjo=');">
+                      User 2
+                    </a>
+                    <a
+                      href="#"
+                      class="block px-4 py-1 text-sm bg-pink-500 rounded hover:bg-pink-600"
+                      onclick="changeImage('https://i.pinimg.com/originals/ab/6d/70/ab6d70b2b5ac104f4459487d3a94bec7.jpg');">
+                      User 3
+                    </a>
                   </div>
                   <!-- Arrow -->
                   <div
@@ -811,6 +828,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="index.js"></script>
 </body>
 
 </html>

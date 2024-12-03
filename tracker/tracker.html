@@ -26,30 +26,41 @@
                         <div class="py-4">
                             <!-- Main button -->
                             <div class="group relative inline-block">
-                                <div class="w-12 h-12 rounded-full bg-cover bg-center" style="
-                      background-image: url('https://img.freepik.com/premium-photo/beautiful-woman-wearing-white-hijab-elegant-hijab_608068-34215.jpg');
-                    "></div>
-
                                 <div
-                                    class="invisible opacity-0 ml-20 group-hover:visible group-hover:opacity-100 absolute left-1/2 top-full z-10 mt-2 -translate-x-1/2 transform rounded bg-gray-900 p-2 text-white transition-all duration-300">
-
-                                    <div class="flex flex-col gap-2 whitespace-nowrap">
-                                        <a href="#"
-                                            class="block px-4 py-1 text-sm bg-pink-500 rounded hover:bg-pink-600">User
-                                            1</a>
-                                        <a href="#"
-                                            class="block px-4 py-1 text-sm bg-pink-500 rounded hover:bg-pink-600">User
-                                            2</a>
-                                        <a href="#"
-                                            class="block px-4 py-1 text-sm bg-pink-500 rounded hover:bg-pink-600">User
-                                            3</a>
-                                    </div>
-
-                                    <div
-                                        class="absolute left-1/2 top-0 -mt-2 h-0 w-0 -translate-x-1/2 transform border-8 border-transparent border-b-gray-900">
-                                    </div>
+                                  id="profilePicture"
+                                  class="w-12 h-12 rounded-full bg-cover bg-center"
+                                  style="background-image: url('https://img.freepik.com/premium-photo/beautiful-woman-wearing-white-hijab-elegant-hijab_608068-34215.jpg');">
                                 </div>
-                            </div>
+                                <!-- Tooltip container -->
+                                <div
+                                  class="invisible opacity-0 ml-20 group-hover:visible group-hover:opacity-100 absolute left-1/2 top-full z-10 mt-2 -translate-x-1/2 transform rounded bg-gray-900 p-2 text-white transition-all duration-300">
+                              
+                                  <div class="flex flex-col gap-2 whitespace-nowrap">
+                                    <a
+                                      href="#"
+                                      class="block px-4 py-1 text-sm bg-pink-500 rounded hover:bg-pink-600"
+                                      onclick="changeImage('https://img.freepik.com/premium-photo/beautiful-woman-wearing-white-hijab-elegant-hijab_608068-34215.jpg');">
+                                      User 1
+                                    </a>
+                                    <a
+                                      href="#"
+                                      class="block px-4 py-1 text-sm bg-pink-500 rounded hover:bg-pink-600"
+                                      onclick="changeImage('https://media.istockphoto.com/photos/beautiful-young-muslim-woman-wearing-a-hijab-on-her-head-picture-id618035002?k=6&m=618035002&s=612x612&w=0&h=_1m2fRBf_DbVeFOZN-VwC2cW9QnV7tYerZwZo44lLjo=');">
+                                      User 2
+                                    </a>
+                                    <a
+                                      href="#"
+                                      class="block px-4 py-1 text-sm bg-pink-500 rounded hover:bg-pink-600"
+                                      onclick="changeImage('https://i.pinimg.com/originals/ab/6d/70/ab6d70b2b5ac104f4459487d3a94bec7.jpg');">
+                                      User 3
+                                    </a>
+                                  </div>
+                                  <!-- Arrow -->
+                                  <div
+                                    class="absolute left-1/2 top-0 -mt-2 h-0 w-0 -translate-x-1/2 transform border-8 border-transparent border-b-gray-900">
+                                  </div>
+                                </div>
+                              </div>
                         </div>
 
                         <div class="py-4">
@@ -487,24 +498,36 @@
                         <!-- CYCLE LENGTH Section -->
                         <div>
                             <div class="mb-6">
-                                <label class="text-sm font-medium block mb-2">Input 1</label>
-                                <input type="number" value="28" class="w-full border rounded-lg p-2" />
+                                <label for="lastPeriod" class="text-sm font-medium block mb-2">
+                                  Date of Your Last Period? (DD-MM-YYYY)
+                                </label>
+                                <input
+                                  id="lastPeriod"
+                                  type="date"
+                                  class="w-full border rounded-lg p-2"
+                                />
+                              </div>
+                              
+
+                            <div class="mb-6">
+                                <label class="text-sm font-medium block mb-2">How long did it last? (Number of Days)</label>
+                                <input type="number" value="00" class="w-full border rounded-lg p-2" />
                             </div>
 
                             <div class="mb-6">
-                                <label class="text-sm font-medium block mb-2">Input 2</label>
-                                <input type="number" value="28" class="w-full border rounded-lg p-2" />
+                                <label class="text-sm font-medium block mb-2">Whats Your usual cycle length?</label>
+                                <input type="number" value="00" class="w-full border rounded-lg p-2" />
                             </div>
-
-                            <div class="mb-6">
-                                <label class="text-sm font-medium block mb-2">Input 3</label>
-                                <input type="number" value="28" class="w-full border rounded-lg p-2" />
-                            </div>
-
+                            <div class="w-full flex justify-center items-center mb-9">
+                                <button class="bg-pink-300 text-white py-2 px-9 rounded-lg">Track</button>
+                              </div>
+                              
                             <div class="bg-pink-50 rounded-lg p-4">
                                 <p class="text-sm font-medium mb-2">Next Period (Estimated)</p>
                                 <p class="text-lg">December 30, 2024</p>
                             </div>
+
+                           
 
                             <div class="bg-pink-50 rounded-lg p-4 mt-7 w-full">
                                 <p class="text-sm font-medium mb-2">Stats:</p>
@@ -767,6 +790,7 @@
     </footer>
 
     <script src="tracker.js"></script>
+    <script src=../index.js></script>
 </body>
 
 </html>
