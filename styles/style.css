@@ -152,7 +152,13 @@ button:focus:before {
   margin: 15px;
 }
 
+
 span {
+  color: #fc00ff;
+  text-shadow: 0 0 20px #fc00ff;
+  font-family: sans-serif;
+}
+.unique-span {
   color: #fc00ff;
   text-shadow: 0 0 20px #fc00ff;
   font-family: Dancing Script;

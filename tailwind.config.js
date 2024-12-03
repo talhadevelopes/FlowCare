@@ -5,6 +5,8 @@ module.exports = {
     "./*.{html,js}",
     "./ecom/**/*.{html,js}",
     "./blogs/**/*.{html,js}",
+    "./forum/**/*.{html,js}",
+    "./tracker/**/*.{html,js}",
     "./scripts/**/*.{html,js}",
   ],
   theme: {
