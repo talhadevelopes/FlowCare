@@ -6,6 +6,7 @@ module.exports = {
     "./ecom/**/*.{html,js}",
     "./blogs/**/*.{html,js}",
     "./forum/**/*.{html,js}",
+    "./consultation/**/*.{html,js}",
     "./tracker/**/*.{html,js}",
     "./scripts/**/*.{html,js}",
   ],
