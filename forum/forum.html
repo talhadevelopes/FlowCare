@@ -281,7 +281,7 @@
             <input
               class="bg-gray-100 outline-none"
               type="text"
-              placeholder="Article name or keyword..."
+              placeholder="search forums..."
             />
           </div>
           <div class="flex py-3 px-4 rounded-lg font-semibold cursor-pointer">
@@ -447,7 +447,7 @@
       </div>
 
       <div
-        class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mt-6"
+        class="grid gap-6 bg-pink-100 md:grid-cols-2 lg:grid-cols-3 mt-6"
         id="forumContainer"
       ></div>
     </div>
@@ -590,27 +590,27 @@
 
       let forums = [...initialForums];
 
-      
       function renderForums() {
         forumContainer.innerHTML = "";
         forums.forEach((forum) => {
           const forumCard = `
-          <div class='bg-pink'>
-                  <div class="bg-white rounded-lg shadow-md p-4">
-                      <div class="text-pink-600 font-semibold text-lg mb-2">${forum.title}</div>
-                      <p class='text-sm absolute -mt-3 italic'>@user1</p>
-                      <div class="text-sm mt-5 text-gray-600 mb-4">${forum.description}</div>
-                      <div class="flex justify-between text-sm text-muted-foreground mb-4">
-                          <div class="flex items-center">
-                              <i class="fa-solid fa-user lucide lucide-users mr-1 h-4 w-4"></i> ${forum.members} members
-                          </div>
-                          <div class="flex items-center">
-                              <i class="lucide lucide-message-circle mr-1 h-4 w-4"></i> ${forum.posts} posts
-                          </div>
-                      </div>
-                      <button class="w-full bg-pink-100 px-4 py-2 rounded-md">Join Forum</button>
-                  </div>
-                  </div>
+          <div class="p-4 rounded-lg">
+  <div class="bg-white rounded-lg shadow-md p-4">
+    <div class="text-pink-600 font-semibold text-lg mb-2">${forum.title}</div>
+    <p class='text-sm absolute -mt-3 italic'>@user1</p>
+    <div class="text-sm mt-5 text-gray-600 mb-4">${forum.description}</div>
+    <div class="flex justify-between text-sm text-muted-foreground mb-4">
+      <div class="flex items-center">
+        <i class="fa-solid fa-user lucide lucide-users mr-1 h-4 w-4"></i> ${forum.members} members
+      </div>
+      <div class="flex items-center">
+        <i class="lucide lucide-message-circle mr-1 h-4 w-4"></i> ${forum.posts} posts
+      </div>
+    </div>
+    <button class="w-full bg-pink-100 px-4 py-2 rounded-md">Join Forum</button>
+  </div>
+</div>
+
               `;
           forumContainer.innerHTML += forumCard;
         });
